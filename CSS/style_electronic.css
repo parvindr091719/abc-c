@@ -1,0 +1,392 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: rgb(255, 254, 254);
+}
+body{
+font-family: Arial;
+margin: 0;
+display: block;
+background-color: #fcfcfc;
+width: 100%;
+}
+
+/*==========================================================================Header ===========================================================*/
+header .nav-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    float: none;
+}
+nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+.dflex{
+   display: flex;
+   align-items: center; 
+}
+.item{
+    padding: 10px 10px;
+
+}
+.item:hover{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+}
+.logo{
+    text-align: center;
+    margin: 4px;
+    margin-bottom: 1px;
+    padding: -5px 8px 0 0;
+    height: 60px;
+}
+a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+a:hover{
+    border: 1px solid #fff;
+    margin: -1px;
+    border-radius: 3px;
+}
+#id-logo{
+    font-size: 14px;
+    margin-left: -12px;
+}
+p{
+    font-size: 12px;
+    line-height: 12px;
+}
+.item i{
+    padding: 0 5px;
+}
+nav input{
+    width: 600px;
+    padding: 11px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+nav button{
+    padding: 14px 9px;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+nav .all{
+    background: #ddd;
+    border-radius: 5px 0 0 5px;
+}
+nav .search{
+    padding: 14px 12px;
+    margin: -2px;
+    background: rgb(247,155,80);
+    border-radius: 0 5px 5px 0;
+}
+
+/*================================================================== subheader ===============================================================*/
+.subnavigation{
+    background-color: #232f3e;
+    padding: 1px 7px;
+}
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+    font-weight: 500;
+    padding: 1px 5px;
+    font-size: 15px;
+}
+nav .submenu{
+    font-size: 22px;
+}
+.li{
+    margin: -5px;
+}
+select{
+    padding: 13px 9px;
+    width: 54px;
+    font-size: 100%;
+    color: #000;
+    background-color: rgb(209, 205, 205); 
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    vertical-align: middle;
+}
+option{
+    color: #0F1111;
+    background-color:rgb(255, 255, 255);
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+/* ==========================================================Middle Part=============================================== */
+.tab-next-nav{
+    padding: 15px;
+    text-align:left;
+    background:#5185c9;
+    color:black;
+    width: 100%;
+}
+.tab-next-nav p{
+    font-size: larger;
+}
+/* ==============================================================Patition=============================================== */
+/*  */
+.partition{
+    height: auto;
+    /* margin: 20% auto; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-color: red;
+    color: black;
+}
+.left-partition{
+    grid-column: span 1;
+    background-color: rgb(255, 255, 255);
+}
+.right-partition{
+    grid-column: span 1 / span 2;
+    background-color: rgb(255, 255, 255); 
+}
+
+.tab-next-nav1{
+    padding: 15px;
+    text-align:left;
+    background:#ffffff;
+    color:black;
+    width: 100%;
+}
+.tab-next-nav1 p{
+    font-size:x-large;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+}
+
+
+/* =============================================boder================================================================= */
+.main-row_1{  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+h1{
+    font-size: 21px!important;
+    line-height: 27.3px!important;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+
+/*  */
+#h3_1{
+    font-size: 21px!important;
+    line-height: 27.3px!important;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+.row-1-box1_1 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box1_1{
+    flex: 50%;
+}
+.child-box1_1 a img {
+    margin-top: 5px;
+    margin-left: 0;
+    height: 280px;
+    width: 280px;
+    color: #000;
+}
+
+.child-container_1 a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 15px;
+}
+
+
+/*===================================================================== Footer 1 =============================================================*/
+#Footer{
+    background-color:#232F3E;
+    margin: 0 auto 15px;
+    display: block;
+}
+#Footer.LeftFooter .FooterBackToTop {
+    margin-bottom: 20px;
+    background-color: #597494;
+}
+.FooterBackToTop span{
+    display: block;
+    margin: 0 618px 0 618px;
+    padding: 16px;
+    display: block;
+}
+.FooterVerticalColumn{  
+    background-color: #232F3E;
+    display: table;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.FooterVerticalRow {
+    display: table-row;
+}
+.FooterLinkCol {
+    display: table-cell;
+    padding: 0 10px;
+    line-height: 120%;
+    color: #333;
+    vertical-align: top;
+}
+.FooterColHead {
+    font-weight: 700;
+    color: #FFF;
+}
+.footer-line {
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
+}
+.FooterColSpacerInner{
+    display: table-cell;
+    padding: 0 10px;
+    width: 10%;
+}
+
+/*=================================================================== logo-find ===============================================================*/
+
+.navFooterLine{
+    margin: 10px auto;
+    text-align: center;
+    margin: 30px auto 15px;
+}
+.navFooterPadItemLine a, .navFooterPadItemLine span {
+    padding: 0 0.6em;
+}
+.navFooterLinkLine{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 8px 0 8px;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+div.navFooterLogoLine {
+    margin: 30px 8px 4px 8px;
+    font-size: 1px;
+    line-height: 0;
+    white-space: normal;
+}
+.nav-logo-base {
+    background-position: -10px -90px;
+    width: 76px;
+    height: 24px;
+    margin: 8px auto;
+}
+.nav-sprite{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    width: 125px;
+    margin-left: 365px;
+}
+span.icp-container-desktop {
+    vertical-align: top;
+    margin: 18px auto 0;
+    margin-left: 70px;
+}
+.navFooterLinkLine span{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.navFooterPadItemLine span{
+    padding: 0 0.6em;
+    padding-top: 0px;
+    padding-right: 0.6em;
+    padding-bottom: 0px;
+    padding-left: 0.6em;
+}
+div.navFooterLine {
+    white-space: normal;
+    font-family: inherit;
+    color: #DDD;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+}
+.icp-container-desktop .icp-button {
+    display: inline-block!important;
+    border: 2px solid #848688;
+    border-radius: 3px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 6px 1px 6px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    font-size: 13px;
+    margin-right: -531;
+}
+.icp-button-globe-2 {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
+    background-position: -77px -24px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.nav-arrow.icp-up-down-arrow {
+    background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
+    width: 12px;
+    height: 12px;
+    background-position: -77px -80px;
+    background-position-x: -77px;
+    background-position-y: -80px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+}

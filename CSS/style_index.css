@@ -1,0 +1,919 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: rgb(255, 254, 254);
+}
+body{
+font-family: Arial;
+margin: 0;
+display: block;
+background-color: #fcfcfc;
+width: 100%;
+}
+
+/*==========================================================================Header ===========================================================*/
+header .nav-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    float: none;
+}
+nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+.dflex{
+   display: flex;
+   align-items: center; 
+}
+.item{
+    padding: 10px 10px;
+
+}
+.item:hover{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+}
+.logo{
+    text-align: center;
+    margin: 4px;
+    margin-bottom: 1px;
+    padding: -5px 8px 0 0;
+    height: 60px;
+}
+a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+a:hover{
+    border: 1px solid #fff;
+    margin: -1px;
+    border-radius: 3px;
+}
+#id-logo{
+    font-size: 14px;
+    margin-left: -12px;
+}
+p{
+    font-size: 12px;
+    line-height: 12px;
+}
+.item i{
+    padding: 0 5px;
+}
+nav input{
+    width: 600px;
+    padding: 11px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+nav button{
+    padding: 14px 9px;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+nav .all{
+    background: #ddd;
+    border-radius: 5px 0 0 5px;
+}
+nav .search{
+    padding: 14px 12px;
+    margin: -2px;
+    background: rgb(247,155,80);
+    border-radius: 0 5px 5px 0;
+}
+
+/*================================================================== subheader ===============================================================*/
+.subnavigation{
+    background-color: #232f3e;
+    padding: 1px 7px;
+}
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+    font-weight: 500;
+    padding: 1px 5px;
+    font-size: 15px;
+}
+nav .submenu{
+    font-size: 22px;
+}
+.li{
+    margin: -5px;
+}
+select{
+    padding: 13px 9px;
+    width: 54px;
+    font-size: 100%;
+    color: #000;
+    background-color: rgb(209, 205, 205); 
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    vertical-align: middle;
+}
+option{
+    color: #0F1111;
+    background-color:rgb(255, 255, 255);
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+
+/*=========================================================== deskbar slider =================================================================*/
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+div#slider1 figure img {
+    width: 20%; 
+    float: left; 
+}
+div#slider1 figure { 
+  position:relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 10s slidy infinite;
+  -webkit-mask-image: linear-gradient(180dg, #000, transparent);
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    width: 100%;
+}
+div#slider1 {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 350px;
+    width: 100%;
+}
+div {
+    display: block;
+}
+
+/*================================================================= Column container ====================================================*/
+.main-row {  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+/*============================================ Create two unequal columns that sits next to each other =======================================*/
+
+/*================================================================= Sidebar/left column 1 ====================================================*/
+h1{
+    font-size: 21px!important;
+    line-height: 27.3px!important;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+.row-1-box1 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box1{
+    flex: 50%;
+}
+.child-box1 img {
+    margin-top: 5px;
+    margin-left: 0;
+    height: 110px;
+    width: 125px;
+    color: #000;
+}
+.child-box2 img{
+    margin-top: 5px;
+    height: 110px;
+    width: 125px;
+}
+.child-box2{
+    flex: 50%;
+}
+#A1{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 18px;
+    text-align: left; 
+}
+#A2{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 42px;
+    text-align: left; 
+}
+#A3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 54px;
+    text-align: left; 
+}
+#A4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 12px;
+    text-align: left; 
+}
+.child-container a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 25px;
+}
+
+/*================================================================= Sidebar/left column 2 ====================================================*/
+.row-1-box2 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align: center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box11{
+    flex: 50%;
+}
+.child-box11 img {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 110px;
+    width: 125px;
+    color: #000;
+}
+.child-box22 img{
+    margin-top: 20px;
+    height: 110px;
+    width: 125px;
+}
+.child-box22{
+    flex: 50%;
+}
+ #B1{
+    color: #0F1111;
+    font-size: 0 0;
+    margin-right:-5px;
+    text-align: left; 
+}
+#B2{
+    color: #0F1111;
+    font-size: 0 0;
+    margin-right: -9px;
+    text-align: left; 
+}
+#B3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 60px;
+    text-align: left; 
+}
+#B4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: -1px;
+    text-align: left; 
+}
+
+.child-container-1 a{
+    margin: 20px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 25px;
+}
+
+
+/*================================================================= Sidebar/left column 3 ====================================================*/
+.row-1-box3 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box111{
+    flex: 50%;
+}
+.child-box111 img {
+    margin-top: 15px;
+    margin-left: 0;
+    height: 112px;
+    width: 130px;
+    color: #000;
+}
+.child-box222 img{
+    margin-top: 15px;
+    height: 110px;
+    width: 130px;
+}
+.child-box222{
+    flex: 50%;
+}
+#C1{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 95px;
+    text-align: left; 
+}
+#C2{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 35px;
+    text-align: left; 
+}
+#C3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 43px;
+    text-align: left; 
+}
+#C4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: -9px;
+    text-align: left; 
+}
+.child-container-2 a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 30px;
+}
+
+/*================================================================= Sidebar/left column 4 ====================================================*/
+.row-1-box4 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 190px;
+    margin: 4px;
+    width: 100%;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.shop-now-btn{
+    border-radius: 50px;
+    background: #f3cd6f;
+    border: 2px solid #846a29;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 50%;
+    height: 20%;
+    margin-bottom: 55px;
+    display: block;
+}
+#box4-sign{
+    margin-left: 2.4px;
+    font-size: 15px!important;
+    color: #000;
+    display: block;
+}
+h3{
+    font-size: 21px!important;
+    line-height: 27.3px!important;
+    font-weight: bold;
+    color: #000;
+    margin: 3px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+
+
+/*================================================================= Column container row 2====================================================*/
+.main-row_1{  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+/*============================================ Create two unequal columns that sits next to each other =======================================*/
+
+/*================================================================= Sidebar/left column 1 ====================================================*/
+#h3_1{
+    font-size: 21px!important;
+    line-height: 27.3px!important;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+.row-1-box1_1 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box1_1{
+    flex: 50%;
+}
+.child-box1_1 a img {
+    margin-top: 5px;
+    margin-left: 0;
+    height: 280px;
+    width: 280px;
+    color: #000;
+}
+
+.child-container_1 a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 15px;
+}
+
+/*================================================================= Sidebar/left column 2 ====================================================*/
+.row-1-box2_2 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align: center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container-1_2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box11_2{
+    flex: 50%;
+}
+.child-box11_2 img {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 110px;
+    width: 125px;
+    color: #000;
+}
+.child-box22_2 img{
+    margin-top: 20px;
+    height: 110px;
+    width: 125px;
+}
+.child-box22_2{
+    flex: 50%;
+}
+ #B1_2{
+    color: #0F1111;
+    font-size: 0 0;
+    margin-right:-5px;
+    text-align: left; 
+}
+#B2_2{
+    color: #0F1111;
+    font-size: 0 0;
+    margin-right: -9px;
+    text-align: left; 
+}
+#B3_2{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 60px;
+    text-align: left; 
+}
+#B4_2{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: -1px;
+    text-align: left; 
+}
+
+.child-container-1_2 a{
+    margin: 20px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 25px;
+}
+
+
+/*================================================================= Sidebar/left column 3 ====================================================*/
+.row-1-box3_3 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container-2_3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box111_3{
+    flex: 50%;
+}
+.child-box111_3 img {
+    margin-top: 12px;
+    margin-left: 0;
+    height: 100px;
+    width: 130px;
+    color: #000;
+}
+.child-box222_3 img{
+    margin-top: 12px;
+    height: 100px;
+    width: 130px;
+}
+.child-box222_3{
+    flex: 50%;
+}
+#C1_3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 35px;
+    text-align: left; 
+}
+#C2_3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 3px;
+    text-align: left; 
+}
+#C3_3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 26px;
+    text-align: left; 
+}
+#C4_3{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 20px;
+    text-align: left; 
+}
+.child-container-2_3 a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 35px;
+}
+
+/*================================================================= Sidebar/left column 4 ====================================================*/
+.row-1-box3_4 {
+    flex: 17%;
+    background-color:#ffffff;
+    height: 400px;
+    margin: 4px;
+    margin-left: 4px;
+    text-align:center;
+    color: black;
+    box-shadow:1px 1px 1px 1px  #B7B7B7;
+    display: block;
+}
+.child-container-2_4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child-box111_4{
+    flex: 50%;
+}
+.child-box111_4 img {
+    margin-top: 15px;
+    margin-left: 0;
+    height: 110px;
+    width: 130px;
+    color: #000;
+}
+.child-box222_4 img{
+    margin-top: 15px;
+    height: 110px;
+    width: 130px;
+}
+.child-box222_4{
+    flex: 50%;
+}
+#C1_4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 40px;
+    text-align: left; 
+}
+#C2_4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 50px;
+    text-align: left; 
+}
+#C3_4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 43px;
+    text-align: left; 
+}
+#C4_4{
+    color: #0F1111;
+    font-size: small 5px;
+    margin-right: 0;
+    text-align: left; 
+}
+.child-container-2_4 a{
+    margin: 15px;
+    text-decoration: none;
+    color:aqua;
+    margin-top: 36px;
+}
+
+ /*==================================================================== CONTAINER =============================================================*/
+input.set { 
+    display:none; 
+}
+
+ .container{
+    display: flex;
+    margin: 5px;
+    margin-top: -60px 0;
+}
+
+#slides { 
+    margin:50px auto; 
+    width:100%; 
+    position: relative; 
+}
+
+#slide1:checked ~ .mask .overflow { 
+    margin-left:0; 
+}
+#slide2:checked ~ .mask .overflow { 
+    margin-left:-100%; 
+}
+#slide3:checked ~ .mask .overflow { 
+    margin-left:-200%; 
+}
+#slide4:checked ~ .mask .overflow { 
+    margin-left:-300%; 
+}
+
+#slides .mask {
+    width:97%; 
+    overflow:hidden;
+    margin:auto;
+}
+
+#slides .overflow { 
+    width:400%;
+   -webkit-transform:translateZ(0); 
+   -webkit-transition:all 0.5s ease-out; 
+   -moz-transition:all 0.5s ease-out; 
+   -o-transition:all 0.5s ease-out; 
+    transition:all 0.5s ease-out; 
+}
+
+#slides .slide 
+{ width:25%; 
+  height:250px; 
+  line-height:200px; 
+  float:left; 
+  background:rgb(255, 255, 255); 
+}
+#slides .slide img{
+    margin: 5px;
+}
+#controls {
+    width:100%; 
+}
+#controls label {
+    display:none; 
+    width:3%; 
+    height:100px; 
+    position:absolute; 
+    top:50%; 
+    margin-top:-50px; 
+    margin-left:20px;
+    margin-right: 20px;
+    cursor:pointer;
+    background: rgb(216, 216, 216); 
+    box-shadow: 1px 1px 1px 1px  #B7B7B7  ;
+    border-radius: 1px;
+  }
+
+#controls label:hover { opacity:0.8; }
+
+#slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4) { right:0; display:block; }
+
+#slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) { left:0; display:block; }
+
+
+/*===================================================================== Footer 1 =============================================================*/
+#Footer{
+    background-color:#232F3E;
+    margin: 0 auto 15px;
+    display: block;
+}
+#Footer.LeftFooter .FooterBackToTop {
+    margin-bottom: 40px;
+    background-color: #37475A;
+}
+.FooterBackToTop span{
+    display: block;
+    margin: 0 618px;
+    padding: 15px;
+}
+.FooterVerticalColumn{  
+    background-color: #232F3E;
+    display: table;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.FooterVerticalRow {
+    display: table-row;
+}
+.FooterLinkCol {
+    display: table-cell;
+    padding: 0 10px;
+    line-height: 120%;
+    color: #333;
+    vertical-align: top;
+}
+.FooterColHead {
+    font-weight: 700;
+    color: #FFF;
+}
+.footer-line {
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
+}
+.FooterColSpacerInner{
+    display: table-cell;
+    padding: 0 10px;
+    width: 10%;
+}
+
+/*=================================================================== logo-find ===============================================================*/
+
+.navFooterLine{
+    margin: 10px auto;
+    text-align: center;
+    margin: 30px auto 15px;
+}
+.navFooterPadItemLine a, .navFooterPadItemLine span {
+    padding: 0 0.6em;
+}
+.navFooterLinkLine{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 8px 0 8px;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+div.navFooterLogoLine {
+    margin: 30px 8px 4px 8px;
+    font-size: 1px;
+    line-height: 0;
+    white-space: normal;
+}
+.nav-logo-base {
+    background-position: -10px -90px;
+    width: 76px;
+    height: 24px;
+    margin: 8px auto;
+}
+.nav-sprite{
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    width: 125px;
+    margin-left: 365px;
+}
+span.icp-container-desktop {
+    vertical-align: top;
+    margin: 18px auto 0;
+    margin-left: 70px;
+}
+.navFooterLinkLine span{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.navFooterPadItemLine span{
+    padding: 0 0.6em;
+    padding-top: 0px;
+    padding-right: 0.6em;
+    padding-bottom: 0px;
+    padding-left: 0.6em;
+}
+div.navFooterLine {
+    white-space: normal;
+    font-family: inherit;
+    color: #DDD;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+}
+.icp-container-desktop .icp-button {
+    display: inline-block!important;
+    border: 2px solid #848688;
+    border-radius: 3px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 6px 1px 6px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    font-size: 13px;
+    margin-right: -531;
+}
+.icp-button-globe-2 {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
+    background-position: -77px -24px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.nav-arrow.icp-up-down-arrow {
+    background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
+    width: 12px;
+    height: 12px;
+    background-position: -77px -80px;
+    background-position-x: -77px;
+    background-position-y: -80px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
